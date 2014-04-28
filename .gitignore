@@ -16,3 +16,4 @@ ws/
 
 #classpath and project
 */.*
+target/

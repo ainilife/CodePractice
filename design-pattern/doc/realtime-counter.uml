@@ -1,0 +1,29 @@
+class MinuteHourCounter{
+- CycledQueue miniteQueue
+- CycledQueue hourQueue
++ add(int count, long now)
++ int getLastMinite()
++ int getLastHour()
+}
+
+class CycledQueue{
+- Queue<Bucket> bucketsQueue;
+- int index;
+- int sum;
+- long lastTime;
+- Bucket lastBucket;
+
++ void enqueue(int count, long now)
++ void getLastTimeSum()
+}
+
+class Bucket{
+- int sum;
+- boolean isRest;
+
++ void add(int count)
++ int getSum()
+}
+
+MinuteHourCounter --> CycledQueue
+CycledQueue --> Bucket
