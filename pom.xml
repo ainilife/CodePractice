@@ -12,6 +12,15 @@
         <module>algorithm</module>
     </modules>
     <description>code practice</description>
+    <dependencyManagement>
+	<dependencies>
+	    <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.4</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <resources>
             <resource>
